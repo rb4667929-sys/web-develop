@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f2f3f7;
+}
+
+.form-container {
+    background: #fff;
+    padding: 30px;
+    width: 350px;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-box {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    outline: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    color: #999;
+    font-size: 16px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+/* Floating label logic */
+.input-box input:focus ~ label,
+.input-box input:valid ~ label {
+    top: -10px;
+    font-size: 13px;
+    color: #5563DE;
+    background: #fff;
+    padding: 0 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #5563DE;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #3f4bd8;
+}
