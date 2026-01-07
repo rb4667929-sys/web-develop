@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application form</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+ <div class="container">
+   <div class="apply_box">
+    <div class="title"><h1> Job Application Form </h1><span class="small_title">(web)</span></div>
+    <form>
+      <div class="form_container">
+      <div class="form_control">
+      <lable for="fname">First Name</lable> 
+      <input type="text" id="fname" name="fname" placeholder="Enter First Name..."> 
+      </div>
+      <div class="form_control">
+      <lable for="lname">Last Name</lable>
+      <input type="text" id="lname" name="lname" placeholder="Enter   Last Name...">
+      </div>
+      <div class="form_control">
+      <lable for="Email">Email</lable>
+      <input type="text" id="email" name="email" placeholder="Enter email...">
+      </div>
+      <div class="form_control">
+      <lable for="">Job role</lable>
+      <select>
+         <option value="">select job role</option>
+         <option value="fronted">Fronted Developer</option>
+         <option value="Backend">Backend Developer</option>
+         <option value="full_stack">Full Stack Developer</option>
+         <option value="ui_ux">UI UX Designer</option>
+      </select>
+      </div>
+      
+      <div class="textarea_control">
+      <label for="address">Address</label>
+      <textarea id="address" name="address" rows="4" cols="50" placeholder="Enter Address">
+      </textarea>
+      </div>
+
+      <div class="form_control">
+      <lable for="city">City</lable>
+      <input id="city" name="city" placeholder="Enter City name...">
+      </div>
+      <div class="form_control">
+      <lable for="pincode">Pincode</lable>
+      <input type="number" id="pincode" name="pincode" placeholder="Enter pincode...">
+      </div>
+      <div class="form_control">
+      <label for="date">Date</label>
+      <input value="1/30/2025" type="date" id="date" name="date" placeholder="Enter Pincode Name">
+      </div>
+      <div class="form_control">
+      <lable for="upload">Upload Your CV</lable>
+      <input type="file" id="date" name="date">
+      </div>
+      <div class="button_container">
+      <button type="submit"> Apply Now</button>
+      </div>
+      </div>
+    </form>
+   </div>
+ </div>
+  </body>
+</html>
